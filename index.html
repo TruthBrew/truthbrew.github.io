@@ -8,16 +8,7 @@
 		  list-style: none;
 		}
     </style>
-  </head>
-  <body>
-    <h1>
-	Current Beer Menu
-	</h1>
-	<ul id="prices">
-
-	</ul>
-  </body><script src="https://spreadsheets.google.com/feeds/list/1rJdxWvzl7mw-yWasp42EXf2PSy8ZZkX6lPL6h3X9Xzo/1/public/values?alt=json-in-script&amp;callback=importGSS"></script>
-  <script type="text/javascript">
+      <script type="text/javascript">
   	function importGSS(json) {
     for (i = 0; i < json.feed.entry.length; i++) {
         entry = json.feed.entry[i];
@@ -29,6 +20,16 @@
 }
   	
   </script>
+  </head>
+  <body>
+    <h1>
+	Current Beer Menu
+	</h1>
+	<ul id="prices">
+
+	</ul>
+  </body><script src="https://spreadsheets.google.com/feeds/list/1rJdxWvzl7mw-yWasp42EXf2PSy8ZZkX6lPL6h3X9Xzo/1/public/values?alt=json-in-script&amp;callback=importGSS"></script>
+
 </html>
 
 
